@@ -1,0 +1,39 @@
+[ 
+    {
+      "id": 1,
+      "title": "Niko",
+      "imagen": "../img/imagen1.png",
+      "text": "君の名前は"
+    },
+    {
+      "id": 2,
+      "title": "Cloud",
+      "imagen": "../img/imagen2.png",
+      "text": "愛してます"
+    },
+    {
+      "id": 3,
+      "title": "Dante",
+      "imagen": "../img/imagen3.png",
+      "text": "愛してます"
+    },
+    {
+      "id": 4,
+      "title": "Vergil",
+      "imagen": "../img/imagen4.png",
+      "text": "愛してます"
+    },
+    {
+      "id": 5,
+      "title": "Nero",
+      "imagen": "../img/imagen5.png",
+      "text": "愛してます"
+    },
+    {
+      "id": 6,
+      "title": "村松さん",
+      "imagen": "../img/imagen6.png",
+      "text": "愛してます"
+    }
+
+]

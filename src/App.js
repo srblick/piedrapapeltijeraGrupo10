@@ -1,18 +1,12 @@
+import React from 'react'
+import Cards from './components/cards'
 import './App.css'
-
-import Inicio from './componentes/inicio';
-import Game from './componenetes/game';
-import Des from './des';
-import {BrowserRouter as Router, Routers, Route} from 'react-router-dwon';
-
-function App(){
-    return(
-        <Router>
-            <Router path='/' elemnt={<Inicio/>}></Router>
-            <Router path='/game' elemnt={<Game/>}></Router>
-            <Router path='/des' elemnt={<Des/>}></Router>
-        </Router>
-    )
+function App() {
+  return (
+    <div className='App'>
+      <Cards/>
+    </div>
+  )
 }
 
-export default App
+export default App;
