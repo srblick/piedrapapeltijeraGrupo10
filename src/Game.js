@@ -1,7 +1,10 @@
 import React from "react";
+import Juego from "./components/Juego";
 
 export default function Game(){
     return(
-        <h1>Hola Mundo!!!</h1>
+        <>
+        <Juego></Juego>
+        </>
     );
 }
