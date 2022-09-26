@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Image, Button, Card } from "react-bootstrap";
 import Resultado from "./Resultado";
 import MostrarJugador from "./MostrarJugador";
+import Volver from "./Volver";
 
 export default function Juego(){
 
@@ -61,6 +62,7 @@ export default function Juego(){
                     <Button onClick={jugar} variant="primary" size="lg" >
                         Jugar
                     </Button>
+                    <Volver/>
                 </Col>
             </Row>
         </Container>

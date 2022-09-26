@@ -2,6 +2,8 @@ import React from 'react'
 import Card from './card'
 import developers from './Json/developers.json'
 //import {BrowserRouter,Routes,Route,Link} from 'react-router-dom'
+import Volver from "./Volver";
+
 
 
 function Cards() {
@@ -16,9 +18,7 @@ function Cards() {
           ))
         }
         <footer>
-          <button className='button-card'> 
-            Volver
-          </button>
+          <Volver/>
         </footer>
       </div>
     </div>
