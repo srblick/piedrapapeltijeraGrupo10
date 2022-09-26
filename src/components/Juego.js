@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Image, Button, Card } from "react-bootstrap";
 import Resultado from "./Resultado";
 import MostrarJugador from "./MostrarJugador";
+import Volver from "./Volver";
 
 export default function Juego(){
 
@@ -10,6 +11,7 @@ export default function Juego(){
     const [jugador1, setJugador1] = useState(0);
     const [jugador2, setJugador2] = useState(0);
     const [ganador, setGanador] = useState(0);
+    const pathImage = require.context("../../img");
 
     const obtenerGanador = (jug1, jug2) => {
         const jugadas = [[0, 2, 1], [1, 0, 2], [2, 1, 0]];
@@ -17,7 +19,7 @@ export default function Juego(){
     }
 
     const obtenerUrl = (nombre) => {
-        return ("../img/" + nombre + ".png");
+        return pathImage("./" + nombre + ".png");
     }
 
     const jugar = () =>{
@@ -56,10 +58,11 @@ export default function Juego(){
                 />
             </Row>
             <Row className="justify-content-md-center">
-                <Col md="4" className="text-center">
+                <Col md="4" className="text-center mt-5">
                     <Button onClick={jugar} variant="primary" size="lg" >
                         Jugar
                     </Button>
+                    <Volver/>
                 </Col>
             </Row>
         </Container>
